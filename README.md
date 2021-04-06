@@ -1,8 +1,19 @@
-# Laravel UI
+# Laravel Backpack UI
 
-<a href="https://packagist.org/packages/laravel/ui"><img src="https://img.shields.io/packagist/dt/laravel/ui" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/ui"><img src="https://img.shields.io/packagist/v/laravel/ui" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/ui"><img src="https://img.shields.io/packagist/l/laravel/ui" alt="License"></a>
+This fork of Laravel UI adds all the necessary scaffolding to start customising the default theme of [Laravel Backpack](https://github.com/Laravel-Backpack/CRUD). While Backpack provides a robust way to create your own themes to completely reskin the application, we've become used to simply replacing backpack's css assets with our own compiled sass files (maybe this isn't best practice, but we find it easier, as we can then do things like change the bootstrap variables to change the colour scheme consistently throughout the admin panel AND any front-end pages...)
+
+### To Use
+
+`composer require stats4sd/laravel-ui`
+`php artisan ui backpack`
+
+This will do the equivalent of running `ui vue` (described below), but will also add the required dependancies to allow you to **completely replace** backpack's css file with your own compiled `public/css/app.css` file. 
+
+You should probably NOT use this to scaffoled auth routes for your laravel app! If you're using Backpack, that comes with its own routes, which can be used - or consider Laravel Breeze (below). 
+
+-------------
+
+# Original README:
 
 ## This legacy package is a very simple authentication scaffolding built on the Bootstrap CSS framework. While it continues to work with the latest version of Laravel, you should consider using [Laravel Breeze](https://github.com/laravel/breeze) for new projects. Or, for something more robust, consider [Laravel Jetstream](https://github.com/laravel/jetstream).
 
