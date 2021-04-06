@@ -13,8 +13,7 @@ class UiCommand extends Command
      * @var string
      */
     protected $signature = 'ui
-                    { type : The preset type (bootstrap, vue, react) }
-                    { --auth : Install authentication UI scaffolding }
+                    { type : The preset type (backpack, bootstrap, vue, react) }
                     { --option=* : Pass an option to the preset command }';
 
     /**
@@ -37,14 +36,15 @@ class UiCommand extends Command
             return call_user_func(static::$macros[$this->argument('type')], $this);
         }
 
-        if (! in_array($this->argument('type'), ['bootstrap', 'vue', 'react'])) {
+        if (! in_array($this->argument('type'), ['backpack', 'bootstrap', 'vue', 'react'])) {
             throw new InvalidArgumentException('Invalid preset.');
         }
 
         $this->{$this->argument('type')}();
 
         if ($this->option('auth')) {
-            $this->call('ui:auth');
+            throw new InvalidArgumentException('Please do not use this to scaffold Auth routes. Either use the routes/controllers from Backpack itself or move to Laravel Breeze or Jetstream');
+            // $this->call('ui:auth');
         }
     }
 
@@ -86,6 +86,24 @@ class UiCommand extends Command
         Presets\React::install();
 
         $this->info('React scaffolding installed successfully.');
+        $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+    }
+    
+    /**
+    * Install the "backpack" preset.
+    *
+    * @return void
+    */
+    protected function backpack()
+    {
+        Presets\Bootstrap::install();
+        Presets\Vue::install();
+        
+        $this->info('Bootstrap + Vue scaffolding installed successfully.');
+        
+        Presets\Backpack::install();
+        
+        $this->info('Backpack extra dependancies installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
     }
 }
