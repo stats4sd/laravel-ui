@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Ui\Presets;
+namespace Stats4SD\LaravelUi\Presets;
 
 use Illuminate\Filesystem\Filesystem;
 

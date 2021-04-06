@@ -145,7 +145,7 @@ php artisan ui react --auth
 Presets are "macroable", which allows you to add additional methods to the `UiCommand` class at runtime. For example, the following code adds a `nextjs` method to the `UiCommand` class. Typically, you should declare preset macros in a [service provider](https://laravel.com/docs/providers):
 
 ```php
-use Laravel\Ui\UiCommand;
+use Stats4SD\LaravelUi\UiCommand;
 
 UiCommand::macro('nextjs', function (UiCommand $command) {
     // Scaffold your frontend...

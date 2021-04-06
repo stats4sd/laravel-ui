@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Ui;
+namespace Stats4SD\LaravelUi;
 
 use Illuminate\Console\Command;
 use InvalidArgumentException;
@@ -88,7 +88,7 @@ class UiCommand extends Command
         $this->info('React scaffolding installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
     }
-    
+
     /**
     * Install the "backpack" preset.
     *
@@ -98,11 +98,11 @@ class UiCommand extends Command
     {
         Presets\Bootstrap::install();
         Presets\Vue::install();
-        
+
         $this->info('Bootstrap + Vue scaffolding installed successfully.');
-        
+
         Presets\Backpack::install();
-        
+
         $this->info('Backpack extra dependancies installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
     }

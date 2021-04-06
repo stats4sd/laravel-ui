@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Ui\\": "src/",
+            "Stats4SD\\LaravelUi\\": "src/",
             "Illuminate\\Foundation\\Auth\\": "auth-backend/"
         }
     },
@@ -30,7 +30,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Ui\\UiServiceProvider"
+                "Stats4SD\\LaravelUi\\UiServiceProvider"
             ]
         }
     },
