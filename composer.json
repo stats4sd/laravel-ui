@@ -1,6 +1,6 @@
 {
     "name": "stats4sd/laravel-ui",
-    "description": "Stats4SD Fork of the Legacy Laravel UI package.",
+    "description": "Stats4SD Fork of the Legacy Laravel UI package. Adds support for compiling front-end assets for Laravel Backpack",
     "keywords": ["laravel", "ui"],
     "license": "MIT",
     "authors": [
