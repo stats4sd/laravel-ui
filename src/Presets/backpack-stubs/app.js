@@ -23,7 +23,7 @@ window._ = _;
 window.axios = axios;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-Vue.component(ExampleComponent);
+Vue.component('ExampleComponent', ExampleComponent);
 
 new Vue({
     el: '#app',
