@@ -32,6 +32,7 @@ class Backpack extends Preset
         return [
             "@coreui/coreui" => "^2.1.16",
             "@digitallyhappy/backstrap" => "^0.3.2",
+            "animate.css" => "^3.7.2",
         ] + $packages;
     }
 
