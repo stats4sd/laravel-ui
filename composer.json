@@ -1,12 +1,12 @@
 {
-    "name": "laravel/ui",
-    "description": "Laravel UI utilities and presets.",
+    "name": "stats4sd/laravel-ui",
+    "description": "Stats4SD Fork of the Legacy Laravel UI package.",
     "keywords": ["laravel", "ui"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Dave Mills",
+            "email": "d.e.mills@stats4sd.org"
         }
     ],
     "require": {

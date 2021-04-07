@@ -16,20 +16,8 @@ class UiServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                AuthCommand::class,
-                ControllersCommand::class,
                 UiCommand::class,
             ]);
         }
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        Route::mixin(new AuthRouteMethods);
     }
 }

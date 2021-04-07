@@ -105,5 +105,6 @@ class UiCommand extends Command
 
         $this->info('Backpack extra dependancies installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+        $this->comment('Also ensure that the following config settings are updated: backpack.base.styles => ["css/app.css"]');
     }
 }
