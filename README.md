@@ -9,7 +9,23 @@ This fork of Laravel UI adds all the necessary scaffolding to start customising 
 
 ### To Use
 
-```
+> This legacy package is a very simple authentication scaffolding built on the Bootstrap CSS framework. While it continues to work with the latest version of Laravel, you should consider using [Laravel Breeze](https://github.com/laravel/breeze) for new projects. Or, for something more robust, consider [Laravel Jetstream](https://github.com/laravel/jetstream).
+
+### Supported Versions
+
+Only the latest major version of Laravel UI receives bug fixes. The table below lists compatible Laravel versions:
+
+| Version | Laravel Version |
+|---- |----|
+| [1.x](https://github.com/laravel/ui/tree/1.x) | 5.8, 6.x |
+| [2.x](https://github.com/laravel/ui/tree/2.x) | 7.x |
+| [3.x](https://github.com/laravel/ui/tree/3.x) | 8.x, 9.x |
+
+### Installation
+
+The Bootstrap and Vue scaffolding provided by Laravel is located in the `laravel/ui` Composer package, which may be installed using Composer:
+
+```bash
 composer require stats4sd/laravel-ui
 php artisan ui backpack
 ```
